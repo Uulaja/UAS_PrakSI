@@ -22,16 +22,30 @@ $result = $conn->query("SELECT * FROM normalisasi");
             <table class="table table-dark table-striped mt-4">
                 <thead>
                     <tr>
-                        <th>Nama Tempat Magang</th>
+                        <th>ID Nilai</th>
+                        <th>ID Alternatif</th>
+                        <th>Nama Alternatif</th>
+                        <th>ID Kriteria</th>
                         <th>Nama Kriteria</th>
+                        <th>ID Bobot</th>
+                        <th>Value</th>
+                        <th>Nilai</th>
+                        <th>Keterangan</th>
                         <th>Normalisasi</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php while ($row = $result->fetch_assoc()): ?>
                     <tr>
+                        <td><?= $row['id_nilai']; ?></td>
+                        <td><?= $row['idalternatif']; ?></td>
                         <td><?= $row['nmalternatif']; ?></td>
+                        <td><?= $row['id_kriteria']; ?></td>
                         <td><?= $row['nm_kriteria']; ?></td>
+                        <td><?= $row['id_bobot']; ?></td>
+                        <td><?= $row['value']; ?></td>
+                        <td><?= $row['nilai']; ?></td>
+                        <td><?= $row['keterangan']; ?></td>
                         <td><?= round($row['normalisasi'], 3); ?></td>
                     </tr>
                     <?php endwhile; ?>
