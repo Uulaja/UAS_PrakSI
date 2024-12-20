@@ -1,0 +1,89 @@
+/* Gaya umum untuk semua halaman */
+body {
+    background-color: #121212; /* Warna latar belakang hitam */
+    color: white; /* Warna teks putih */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Judul halaman */
+h1, h2, h3 {
+    color: #ffffff; /* Putih */
+    text-align: center;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444; /* Warna garis tabel */
+}
+
+table th {
+    background-color: #222; /* Header tabel lebih gelap */
+}
+
+table tr:nth-child(even) {
+    background-color: #333; /* Baris genap lebih gelap */
+}
+
+/* Tombol */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #1e88e5; /* Biru elegan */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #1565c0; /* Biru lebih gelap */
+}
+
+/* Kartu */
+.card {
+    background-color: #1e1e1e; /* Latar belakang kartu */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulir */
+form label {
+    color: white;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+
+form input[type="submit"] {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1565c0;
+}
